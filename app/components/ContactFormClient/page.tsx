@@ -80,23 +80,7 @@ const ContactForm: React.FC = () => {
 
   return (
     <div className="p-10 mx-auto max-w-7xl">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-        {/* In-person Hours Section */}
-        <div>
-          <h2 className="text-4xl font-bold mb-4">Hours of Operations</h2>
-          <table className="text-xl">
-            <tbody>
-              <tr>
-                <td className="pr-4">Mon - Fri:</td>
-                <td>09:00 a.m. – until</td>
-              </tr>
-              <tr>
-                <td className="pr-4 pt-4">Weekends:</td>
-                <td className="pt-4">Closed.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+      <div className="grid grid-cols-1 md:grid-cols-1 gap-10">
 
         {/* Contact Form Section */}
         <form onSubmit={handleSubmit} className="bg-white text-black rounded-xl shadow-lg p-8">
