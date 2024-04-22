@@ -3,7 +3,7 @@
 import React from "react";
 import ContactForm from "./components/ContactFormClient/page";
 import About from "./components/About/page";
-import Booking from "./components/Booking/page";
+import Booking from "./components/Classes/page";
 import Head from "next/head";
 
 export default function Home() {

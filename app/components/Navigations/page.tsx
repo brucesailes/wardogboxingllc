@@ -9,14 +9,14 @@ export default function Navigations() {
                         <a className="text-white hover:text-blue-500">Home</a>
                     </Link>
                 </li>
-                {/* <li className="text-xs sm:text-sm md:text-base lg:text-lg">
+                <li className="text-xs sm:text-sm md:text-base lg:text-lg">
                     <Link href="/Shop" legacyBehavior>
                         <a className="text-white hover:text-blue-500">Shop</a>
                     </Link>
-                </li> */}
+                </li>
                 <li className="text-xs sm:text-sm md:text-base lg:text-lg">
-                    <Link href="/Socials" legacyBehavior>
-                        <a className="text-white hover:text-blue-500">Socials</a>
+                    <Link href="/Classes" legacyBehavior>
+                        <a className="text-white hover:text-blue-500">Classes</a>
                     </Link>
                 </li>
                 <li className="text-xs sm:text-sm md:text-base lg:text-lg">
@@ -28,3 +28,4 @@ export default function Navigations() {
         </nav>
     );
 }
+
