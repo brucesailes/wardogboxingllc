@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Applying Open Sans globally to body and form elements */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: italic;
+  background-image: linear-gradient(to right, black, rgb(48, 48, 184));
+  color: rgb(255, 255, 255); /* Changed to black for readability */
+}
