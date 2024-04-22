@@ -6,7 +6,7 @@ export default function About() {
         <main className="flex flex-col items-center justify-center min-h-screen p-4">
             <header className="text-center mb-8">
                 <h1 className="text-4xl md:text-6xl font-bold mb-2">War Dog Boxing</h1>
-                <p className="text-l md:text-xl font-light mt-4">"{companyInfo.companySlogan}"</p>
+                <p className="text-l md:text-xl font-light mt-4">{companyInfo.companySlogan}</p>
             </header>
             <section className="w-full max-w-4xl mx-auto p-8 rounded-xl shadow-xl space-y-6">
                 <div className="flex justify-center items-center p-6">

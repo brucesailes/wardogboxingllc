@@ -6,7 +6,7 @@ const BookingOptions = () => {
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-4 md:p-8">
       <div className="bg-white text-black p-6 shadow-xl rounded-xl text-center">
         <h2 className="text-2xl md:text-3xl font-bold mb-4">Free Session</h2>
-        <p className="text-lg md:text-xl mb-6">If you're scared, book a one-time free session.</p>
+        <p className="text-lg md:text-xl mb-6">If you&apos;re scared, book a one-time free session.</p>
         <Link href="https://calendly.com/example/basic" legacyBehavior>
           <a target="_blank" rel="noopener noreferrer" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded">
             Book Now 
