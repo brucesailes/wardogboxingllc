@@ -24,7 +24,7 @@ export default function About() {
                 <h2 className="text-3xl font-semibold text-center">
                     Our Mission:
                 </h2>
-                <p className="text-lg md:text-xl px-6 md:px-16 leading-relaxed">
+                <p className="text-sm md:text-xl px-6 md:px-16 leading-relaxed">
                     {companyInfo.aboutText}
                 </p>
             </section>
