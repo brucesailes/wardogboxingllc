@@ -3,7 +3,7 @@
 
 export default function Footer() {
   return (
-      <footer className="py-4 mt-auto text-white">
+      <footer className="py-4 mt-auto text-white shadow-xl border-t">
           <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
               <div className="text-sm text-center md:text-left mb-4 md:mb-0">
                   <p>
