@@ -1,0 +1,19 @@
+.shopContainer {
+    /* Ensure it fills the entire viewport height and centers content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.shopHeader {
+    background-image: linear-gradient(to right, rgb(97, 34, 197), rgb(48, 48, 184));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+    line-height: 1.2;
+    /* text-shadow: 1px 1px 2px rgba(0,0,0,0.1); */
+  }
+
