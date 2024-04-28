@@ -1,38 +1,32 @@
-'use client'
+"use client" 
 
 import React, { useState } from 'react';
 
-interface FormData {
-  name: string;
-  email: string;
-  phonenumber: string;
-  message: string;
-}
 
-const ContactForm: React.FC = () => {
-  const initialFormData: FormData = {
+
+export default function ContactForm() {
+  const initialFormData = {
     name: '',
     email: '',
-    phonenumber: '',
     message: '',
   };
 
-  const [formData, setFormData] = useState<FormData>(initialFormData);
-  const [file, setFile] = useState<File | null>(null);
-  const [submitStatus, setSubmitStatus] = useState<string | null>(null);
-  const [emailError, setEmailError] = useState<string | null>(null);
+  const [formData, setFormData] = useState(initialFormData);
+  const [submitStatus, setSubmitStatus] = useState(null);
+  const [emailError, setEmailError] = useState(null);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const validateEmail = (email: string): boolean => {
+  const validateEmail = (email) => {
+    // Simple regex pattern for email validation
     const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
     return emailPattern.test(email);
   };
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (!validateEmail(formData.email)) {
@@ -40,51 +34,36 @@ const ContactForm: React.FC = () => {
       return;
     }
 
-    // Adjust the headers and body for FormData submission
-    const data = new FormData();
-    data.append('name', formData.name);
-    data.append('email', formData.email);
-    data.append('phonenumber', formData.phonenumber);
-    data.append('message', formData.message);
-   
-
     try {
-      const response = await fetch('/api/submitForm', {
+      const response = await fetch('/api/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(formData),
-        });
-      
+      });
 
       if (response.ok) {
+        // Email sent successfully
         setSubmitStatus('success');
-        setEmailError(null);
-        setFormData(initialFormData); // Reset form data
-        setFile(null); // Reset file input
+        setFormData(initialFormData); // Reset the form
+        setEmailError(null); // Clear the email error
       } else {
+        // Handle the error
         setSubmitStatus('error');
       }
     } catch (error) {
+      // Handle network or other errors
       setSubmitStatus('error');
     }
-
-    setTimeout(() => {
-      setFormData(initialFormData);
-      setSubmitStatus(null);
-      setEmailError(null);
-    }, 5000); // Reset form after a delay
   };
 
-
   return (
-    <div className="p-10 mx-auto max-w-7xl">
-      <div className="grid grid-cols-1 md:grid-cols-1 gap-10">
+    <div className="p-10 mx-auto max-w-7xl transition-all duration-300 transform hover:scale-105">
+    <div className="grid grid-cols-1 md:grid-cols-1 gap-10">
 
         {/* Contact Form Section */}
-        <form onSubmit={handleSubmit} className="bg-white text-black rounded-xl shadow-lg p-8">
-          <h1 className="text-3xl font-bold mb-4 text-center text-black">Contact Us</h1>
+        <form onSubmit={handleSubmit} className="bg-white text-black rounded-xl shadow-2xl p-8">
           {submitStatus === 'success' && <p className="mb-4 text-green-500 font-bold">Email sent successfully!</p>}
           {submitStatus === 'error' && <p className="mb-4 text-red-500 font-bold">Error sending email. Please try again.</p>}
 
@@ -110,12 +89,10 @@ const ContactForm: React.FC = () => {
 
           {/* Submit Button */}
           <div className="text-center mt-4">
-            <button type="submit" className="bg-blue-500 text-white hover:bg-blue-600 font-bold py-2 px-6 rounded-lg transition duration-300">Send Message</button>
+            <button type="submit" className="bg-white text-blue-500 hover:text-black font-bold py-2 px-6 shadow-xl rounded-full transition duration-300">Send Message</button>
           </div>
         </form>
       </div>
     </div>
   );
 };
-
-export default ContactForm;

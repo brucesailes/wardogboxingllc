@@ -13,7 +13,6 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
-  font-style: italic;
-  background-image: linear-gradient(to right, black, rgb(48, 48, 184));
-  color: rgb(255, 255, 255); /* Changed to black for readability */
+  font-style: bold;
+  background-color: whitesmoke; 
 }
