@@ -5,7 +5,7 @@ import styles from '../styles/About.module.css';
 
 export default function About() {
     return (
-        <main className="flex flex-col  text-center text-blue-500 items-center justify-center min-h-screen p-4 m-10">
+        <main className="flex flex-col  text-center text-blue-500 items-center justify-center min-h-screen mt-10">
             <header className="text-center mb-8">
                 <h1 className={`${styles.gradientHeader} text-4xl md:text-6xl font-bold  transition-all duration-300 transform hover:scale-105`}>War Dog Boxing</h1>
                 <p className="text-l md:text-xl  mt-4  transition-all duration-300 transform hover:scale-105">{companyInfo.companySlogan}</p>

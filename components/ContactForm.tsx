@@ -2,37 +2,51 @@
 
 import React, { useState } from 'react';
 
+interface FormData {
+  name: string;
+  email: string;
+  phonenumber: string;
+  message: string;
+}
 
 
 export default function ContactForm() {
   const initialFormData = {
     name: '',
     email: '',
+    phonenumber: '',
     message: '',
   };
 
-  const [formData, setFormData] = useState(initialFormData);
-  const [submitStatus, setSubmitStatus] = useState(null);
-  const [emailError, setEmailError] = useState(null);
+  const [formData, setFormData] = useState<FormData>(initialFormData);
+  const [file, setFile] = useState<File | null>(null);
+  const [submitStatus, setSubmitStatus] = useState<string | null>(null);
+  const [emailError, setEmailError] = useState<string | null>(null);
 
-  const handleChange = (e) => {
+  const handleChange = (e: any) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const validateEmail = (email) => {
+  const validateEmail = (email: string) => {
     // Simple regex pattern for email validation
     const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
     return emailPattern.test(email);
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
 
     if (!validateEmail(formData.email)) {
       setEmailError('Invalid email address');
       return;
     }
+
+    const data = new FormData();
+    data.append('name', formData.name);
+    data.append('email', formData.email);
+    data.append('phonenumber', formData.phonenumber);
+    data.append('message', formData.message);
 
     try {
       const response = await fetch('/api/submit', {
@@ -44,22 +58,26 @@ export default function ContactForm() {
       });
 
       if (response.ok) {
-        // Email sent successfully
         setSubmitStatus('success');
-        setFormData(initialFormData); // Reset the form
-        setEmailError(null); // Clear the email error
+        setEmailError(null);
+        setFormData(initialFormData); // Reset form data
+        setFile(null); // Reset file input
       } else {
-        // Handle the error
         setSubmitStatus('error');
       }
     } catch (error) {
-      // Handle network or other errors
       setSubmitStatus('error');
     }
+
+    setTimeout(() => {
+      setFormData(initialFormData);
+      setSubmitStatus(null);
+      setEmailError(null);
+    }, 5000); // Reset form after a delay
   };
 
   return (
-    <div className="p-10 mx-auto max-w-7xl transition-all duration-300 transform hover:scale-105">
+    <div className="mx-auto max-w-7xl transition-all duration-300 transform hover:scale-105">
     <div className="grid grid-cols-1 md:grid-cols-1 gap-10">
 
         {/* Contact Form Section */}
