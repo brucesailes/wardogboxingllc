@@ -20,7 +20,7 @@ const BookingOptions = () => {
       {/* Repeat for each booking option */}
       <div className="bg-white text-blue-500 p-6 shadow-xl rounded-xl text-center transition-all duration-300 transform hover:scale-105">
         <h2 className={`${styles.bookingHeader} text-2xl md:text-3xl font-bold mb-4`}>BOXING</h2>
-        <p className="text-lg md:text-xl mb-6">Ideal for beginners looking to learn the basics of boxing.</p>
+        <p className="text-lg md:text-xl mb-12">Ideal for beginners looking to learn the basics of boxing.</p>
         <Link href="https://calendly.com/wardogboxingllc/boxing" legacyBehavior>
           <a target="_blank" rel="noopener noreferrer" className={bookingLinkStyle}>
             BOOK
