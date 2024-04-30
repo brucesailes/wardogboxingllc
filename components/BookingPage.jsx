@@ -6,7 +6,7 @@ export default function Booking () {
     return (
         <div className='text-center'>
             <header className='text-4xl font-bold transition-all duration-300 transform hover:scale-105'>
-                <h1 className={`${styles.bookingHeader} mb-4`}>Book Now</h1>
+                <h1 className={`${styles.bookingHeader} mb-4`}>BOOK NOW</h1>
             </header>
             <BookingOptions />
         </div>

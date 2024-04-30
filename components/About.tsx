@@ -8,7 +8,9 @@ export default function About() {
         <main className="flex flex-col  text-center text-blue-500 items-center justify-center min-h-screen mt-10">
             <header className="text-center mb-8">
                 <h1 className={`${styles.gradientHeader} text-4xl md:text-6xl font-bold  transition-all duration-300 transform hover:scale-105`}>War Dog Boxing</h1>
-                <p className="text-l md:text-xl  mt-4  transition-all duration-300 transform hover:scale-105">{companyInfo.companySlogan}</p>
+                <blockquote className="text-l md:text-xl  mt-4  transition-all duration-300 transform hover:scale-105">&rdquo;{companyInfo.companySlogan}&rdquo;
+                <footer>- KEVIN COOPER</footer>
+                </blockquote>
             </header>
             <section className="w-full max-w-4xl mx-auto p-8 rounded-xl shadow-xl space-y-6  transition-all duration-300 transform hover:scale-105">
                 <div className="flex justify-center items-center p-6">
@@ -26,12 +28,15 @@ export default function About() {
                 </div>
                 
                 <h2 className={`${styles.gradientHeader} text-3xl font-bold`}>
-                    Our Mission:
+                    OUR MISSION:
                 </h2>
 
-                <p className="text-sm md:text-xl text-center px-6 md:px-16 leading-relaxed">
-                    {companyInfo.aboutText}
-                </p>
+                <div className='flex justify-center items-center text-center text-l md:text-xl text-center leading-relaxed border-2 border-l-blue-500 border-r-blue-500'>
+                    <p className="">
+                        {companyInfo.aboutText}
+                    </p>
+                </div>
+
             </section>
         </main>
     );
