@@ -42,7 +42,7 @@ const BookingOptions = () => {
       {/* Repeat for each booking option */}
       <div className="bg-white text-blue-500 p-6 shadow-xl rounded-xl text-center transition-all duration-300 transform hover:scale-105">
         <h2 className={`${styles.bookingHeader} text-2xl md:text-3xl font-bold mb-4`}>FITNESS</h2>
-        <p className="text-lg md:text-xl mb-6">Tailored fitness programs to build strength, endurance, and overall health.</p>
+        <p className="text-lg md:text-xl mb-8">Tailored fitness programs to build strength, endurance, and overall health.</p>
         <Link href="https://calendly.com/wardogboxingllc/fitness" legacyBehavior>
           <a target="_blank" rel="noopener noreferrer" className={bookingLinkStyle}>
             BOOK
