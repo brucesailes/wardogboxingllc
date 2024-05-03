@@ -32,7 +32,7 @@ interface Image {
         </h1>
     
         <div className="px-4 sm:px-6 lg:px-8">
-          <Slider {...settings} className=" max-w-md sm:max-w-lg lg:max-w-xl xl:max-w-2xl mx-auto">
+          <Slider {...settings} className="m-4 max-w-md sm:max-w-lg lg:max-w-xl xl:max-w-2xl mx-auto border shadow-lg">
             {images.map((image, index) => (
               <div key={index} className="">
                 <Image src={image.src} alt={image.alt} width={100} height={100} layout="responsive" className="transition-all duration-300 transform hover:scale-105"/>
