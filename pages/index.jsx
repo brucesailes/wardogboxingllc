@@ -1,5 +1,3 @@
-// import HomeSlideShow from '../components/HomeSlideShow';
-import Image from 'next/image';
 import About from '../components/About';
 import Booking from '../components/BookingPage';
 import Contact from '../components/ContactPage';

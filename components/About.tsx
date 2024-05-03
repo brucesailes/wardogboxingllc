@@ -7,7 +7,7 @@ export default function About() {
     return (
         <main className="flex flex-col bg-white shadow-lg text-center text-blue-500 items-center justify-center min-h-screen mt-20  transition-all duration-300 transform hover:scale-105">
             <header className="text-center mb-8">
-                <h1 className={`${styles.gradientHeader} text-4xl mt-5 md:text-6xl font-bold  transition-all duration-300 transform hover:scale-105`}>War Dog Boxing</h1>
+                <h1 className={`${styles.gradientHeader} text-4xl mt-5 md:text-6xl font-bold  transition-all duration-300 transform hover:scale-105`}>WAR DOG BOXING</h1>
                 <blockquote className="text-l md:text-xl  mt-4  transition-all duration-300 transform hover:scale-105">&rdquo;{companyInfo.companySlogan}&rdquo;
                 <footer>- KEVIN COOPER</footer>
                 </blockquote>
