@@ -14,7 +14,7 @@ const image = [
 
 export default function Shop() {
     return (
-        <div className="flex flex-col items-center justify-center space-y-8 mt-20 min-h-screen">  
+        <div className="flex items-center justify-center min-h-screen space-y-8 m-20">  
             <StoreSlideshow images={image} />
         </div>
     );

@@ -2,31 +2,19 @@ import About from '../components/About';
 import Booking from '../components/BookingPage';
 import Contact from '../components/ContactPage';
 import HomeSlideshow from '@/components/HomeSlideShow';
+import MeetTheCoach from '@/components/MeetTheCoach';
 
 
 
-const image = [
-  {
-      src: "/slide1.png",
-      alt: "Image 1",
-  },
-  {
-      src: "/slide2.png",
-      alt: "Image 2",
-  },
-  {
-      src: "/slide3.png",
-      alt: "Image 3",
-  },
 
-  ];
 
 export default function Page() {
   return (
-    <main className="m-5 flex flex-col justify-center items-center space-y-8">
+    <main className="m-0 p-4 flex flex-col justify-center items-center space-y-8">
       <About  />
-      <HomeSlideshow images={image} />
+      <HomeSlideshow />
       <Booking />
+      <MeetTheCoach />
       <Contact />
     </main>
   );
