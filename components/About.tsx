@@ -21,8 +21,6 @@ export default function About() {
                             alt="War dog boxing logo"
                             priority
                             fill={true} 
-                            style={{objectFit: "cover"}}
-                            className="rounded-full"
                         />
                     </div>
                 </div>

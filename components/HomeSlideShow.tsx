@@ -12,15 +12,15 @@ export default function HomeSlideShow() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 px-4 sm:px-6 lg:px-8">
         <div className="p-2 transition-all duration-300 transform hover:scale-105">
-          <Image src="/slide1.png" alt="Image 1" width={300} height={300} />
+          <Image src="/slide1.png" alt="Image 1" width={500} height={500} />
         </div>
 
         <div className="p-2 transition-all duration-300 transform hover:scale-105">
-          <Image src="/slide2.png" alt="Image 2" width={300} height={300}  />
+          <Image src="/slide2.png" alt="Image 2" width={500} height={500} />
         </div>
 
         <div className="p-2 transition-all duration-300 transform hover:scale-105">
-          <Image src="/slide3.png" alt="Image 3" width={300} height={300} />
+          <Image src="/slide3.png" alt="Image 3"  width={500} height={500} />
         </div>
 
       </div>
