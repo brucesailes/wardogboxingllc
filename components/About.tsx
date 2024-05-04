@@ -25,7 +25,7 @@ export default function About() {
                     </div>
                 </div>
                 
-                <h2 className={`${styles.gradientHeader} text-3xl font-bold`}>
+                <h2 className={`${styles.gradientHeader} text-3xl font-bold transition-all duration-300 transform hover:scale-105`}>
                     OUR MISSION:
                 </h2>
 

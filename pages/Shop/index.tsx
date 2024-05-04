@@ -1,21 +1,10 @@
-import React from 'react';
-import StoreSlideshow from '../../components/StoreSlideShow';
-
-const image = [
-    {
-        src: "/tshirts1.png",
-        alt: "Image 1",
-    },
-    {
-        src: "/tshirts2.png",
-        alt: "Image 2",
-    },
-];
+import styles from '../../styles/HomeSlideShow.module.css';  // Correct path
 
 export default function Shop() {
     return (
-        <div className="flex items-center justify-center min-h-screen space-y-8 m-20">  
-            <StoreSlideshow images={image} />
+        <div className="grid grid-cols-1 place-items-center min-h-screen space-y-4 m-20">
+            <h2 className={`${styles.gradientHeader} text-3xl animate-bounce`}>COMING SOON...</h2>
         </div>
     );
 }
+
