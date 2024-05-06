@@ -29,7 +29,7 @@ export default function Navigations () {
               duration={500}
               className="cursor-pointer"
             >
-              BOOK
+              SERVICES
             </ScrollLink>
           </li>
           <li className="text-blue-500 text-l sm:text-xs md:text-base lg:text-xl hover:text-blue-600">
