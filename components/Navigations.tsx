@@ -1,29 +1,50 @@
-import Link from "next/link";
-import { ReactElement } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import React from "react";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import styles from "../styles/Navigations.module.css";
-import { faHome, faMessage, faShop } from "@fortawesome/free-solid-svg-icons";
 
-export default function Navigations(): ReactElement {
+export default function Navigations () {
     return (
-        <nav className={`${styles.nav} fixed top-0 left-0 w-full shadow-md z-50 p-4 h-14 mb-20`}>
-            <ul className="flex justify-center items-center space-x-6 md:space-x-6 md:text-lg lg:text-2xl">
-                <li className="text-blue-500 text-xl sm:text-xs md:text-base lg:text-2xl">
-                    <Link href="/" legacyBehavior>
-                        <a><FontAwesomeIcon icon={faHome} /></a>
-                    </Link>
-                </li>
-                <li className="text-blue-500 text-xl sm:text-xs md:text-base lg:text-2xl">
-                    <Link href="/Shop" legacyBehavior>
-                        <a><FontAwesomeIcon icon={faShop} /></a>
-                    </Link>
-                </li>
-                <li className="text-blue-500 text-xl sm:text-xs md:text-base lg:text-2xl">
-                    <Link href="/Socials" legacyBehavior>
-                        <a><FontAwesomeIcon icon={faMessage} /></a>
-                    </Link>
-                </li>
-            </ul>
-        </nav>
+      <nav
+        className={`${styles.nav} fixed top-0 left-0 w-full shadow-md z-50 p-4 h-14 mb-20`}
+      >
+        <ul className="flex justify-center items-center space-x-6 md:space-x-6 md:text-lg lg:text-2xl">
+          <li className="text-blue-500 text-l sm:text-xs md:text-base lg:text-xl hover:text-blue-600">
+            <ScrollLink
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="cursor-pointer"
+            >
+             HOME
+            </ScrollLink>
+          </li>
+          <li className="text-blue-500 text-l sm:text-xs md:text-base lg:text-xl hover:text-blue-600">
+            <ScrollLink
+              to="booking"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="cursor-pointer"
+            >
+              BOOK
+            </ScrollLink>
+          </li>
+          <li className="text-blue-500 text-l sm:text-xs md:text-base lg:text-xl hover:text-blue-600">
+            <ScrollLink
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="cursor-pointer"
+            >
+              CONTACT
+            </ScrollLink>
+          </li>
+        </ul>
+      </nav>
     );
-}
+  }

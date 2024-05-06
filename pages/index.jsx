@@ -1,21 +1,24 @@
-import About from '../components/About';
-import Booking from '../components/BookingPage';
-import Contact from '../components/ContactPage';
-import HomeSlideshow from '@/components/HomeSlideShow';
-import MeetTheCoach from '@/components/MeetTheCoach';
-
-
-
-
+import React from "react";
+import About from "../components/About";
+import Booking from "../components/BookingPage";
+import Contact from "../components/ContactPage";
+import HomeSlideshow from "@/components/HomeSlideShow";
+import MeetTheCoach from "@/components/MeetTheCoach";
 
 export default function Page() {
   return (
     <main className="m-0 p-4 flex flex-col justify-center items-center space-y-8">
-      <About  />
+      <section id="about">
+        <About />
+      </section>
       <HomeSlideshow />
-      <Booking />
+      <section id="booking">
+        <Booking />
+      </section>
       <MeetTheCoach />
-      <Contact />
+      <section id="contact">
+        <Contact />
+      </section>
     </main>
   );
 }
