@@ -82,7 +82,7 @@ export default function ContactForm() {
 
         {/* Contact Form Section */}
         <form onSubmit={handleSubmit} className="bg-white text-black rounded-xl shadow-2xl p-8">
-          {submitStatus === 'success' && <p className="mb-4 text-green-500 font-bold">Email sent successfully!</p>}
+          {submitStatus === 'success' && <p className="mb-4 text-black font-bold">Thank you!</p>}
           {submitStatus === 'error' && <p className="mb-4 text-red-500 font-bold">Error sending email. Please try again.</p>}
 
           {/* Form fields */}

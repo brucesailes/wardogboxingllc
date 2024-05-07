@@ -24,7 +24,7 @@ export default async function handleGet(req: any, res: any) {
 
       await transporter.sendMail(mailOptions);
 
-      res.status(200).json({ message: 'Email sent successfully' });
+      res.status(200).json({ message: 'Thank you!' });
     } catch (error) {
       console.error('Error sending email:', error);
       res.status(500).json({ message: 'Error sending email' });

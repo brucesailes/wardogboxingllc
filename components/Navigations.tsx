@@ -2,6 +2,7 @@ import React from "react";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import styles from "../styles/Navigations.module.css";
 
+
 export default function Navigations () {
     return (
       <nav
