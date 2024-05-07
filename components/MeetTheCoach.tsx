@@ -16,7 +16,7 @@ export default function MeetTheCoach() {
             </div>
 
             {/* Text content container */}
-            <div className="flex flex-col justify-center m-10 p-20 max-w-25 mx-auto">
+            <div className="flex flex-col justify-center m-10 p-2 max-w-25 mx-auto">
                 <h2 className={`${styles.gradientHeader} text-2xl font-bold text-center md:text-left transition-all duration-300 transform hover:scale-105`}>
                     Meet the Owner & Coach
                 </h2>
