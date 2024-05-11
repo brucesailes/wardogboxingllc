@@ -5,7 +5,7 @@ export default function HomeSlideShow() {
   return (
     <div>
       <div className="text-center">
-        <h1 className={`${styles.gradientHeader} mx-4 mt-4 mb-2 text-3xl sm:text-3xl lg:text-4xl font-bold transition-all duration-300 transform hover:scale-105`}>
+        <h1 className={`${styles.gradientHeader} mx-4 mt-4 mb-4 text-3xl sm:text-3xl lg:text-4xl font-bold transition-all duration-300 transform hover:scale-105`}>
           PERSONAL TRAINING AVAILABLE
         </h1>
       </div>
