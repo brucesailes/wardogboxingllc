@@ -11,7 +11,7 @@ export default function MeetTheCoach() {
                     alt="Coach Kevin Cooper" 
                     width={300} 
                     height={300} 
-                    className="rounded-full"  // Makes the image round, remove if not needed
+                    className="rounded-full shadow-xl"  // Makes the image round, remove if not needed
                 />
             </div>
 
