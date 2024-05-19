@@ -8,26 +8,4 @@
       text-align: center;
 }  
 
-/* In HomeSlideShow.module.css */
-.slick-slide > div {
-  margin: 0 16px !important;
-}
 
-/* Customizing slick slider arrows */
-.slick-prev:before,
-.slick-next:before {
-  color: #ff0000 !important;/* Red arrows */
-    font-size: 20px; /* Larger arrows */
-}
-
-/* Optional: Add hover effects */
-.slick-prev:hover:before,
-.slick-next:hover:before {
-  color: #ff0000 !important; /* Blue when hovered */
-}
-
-@media (max-width: 768px) {
-  .slick-slide > div {
-    margin: 0 10px; /* Smaller margins on smaller screens */
-  }
-}
