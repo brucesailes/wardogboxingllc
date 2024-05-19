@@ -38,7 +38,7 @@ const BookingOptions = () => {
         {/* 4 Sessions per Month */}
         <div className="bg-white text-blue-500 p-6 shadow-xl rounded-xl text-center transition-all duration-300 transform hover:scale-105 flex flex-col justify-between">
           <div className="flex-grow">
-            <h2 className={`${styles.bookingHeader} text-2xl md:text-3xl font-bold mb-4`}>1 session a Week</h2>
+            <h2 className={`${styles.bookingHeader} text-2xl md:text-3xl font-bold mb-4`}>1 session per Week</h2>
             <p className="text-lg md:text-xl mb-4">$100 per month</p>
             <p className="text-lg md:text-xl mb-8">Learn essential self-defense techniques to enhance personal safety and confidence. Build strength and endurance. Learn the fundamentals of boxing.</p>
           </div>
@@ -52,7 +52,7 @@ const BookingOptions = () => {
         {/* Twice a Week Sessions */}
         <div className="bg-white text-blue-500 p-6 shadow-xl rounded-xl text-center transition-all duration-300 transform hover:scale-105 flex flex-col justify-between">
           <div className="flex-grow">
-            <h2 className={`${styles.bookingHeader} text-2xl md:text-3xl font-bold mb-4`}>2 sessions a Week</h2>
+            <h2 className={`${styles.bookingHeader} text-2xl md:text-3xl font-bold mb-4`}>2 sessions per Week</h2>
             <p className="text-lg md:text-xl mb-4">$150 per month</p>
             <p className="text-lg md:text-xl mb-8">Tailored fitness programs to build strength, endurance, and overall health.</p>
           </div>
@@ -66,7 +66,7 @@ const BookingOptions = () => {
         {/* 3 Times a Week per Month */}
         <div className="bg-white text-blue-500 p-6 shadow-xl rounded-xl text-center transition-all duration-300 transform hover:scale-105 flex flex-col justify-between">
           <div className="flex-grow">
-            <h2 className={`${styles.bookingHeader} text-2xl md:text-3xl font-bold mb-4`}>3 sessions a Week</h2>
+            <h2 className={`${styles.bookingHeader} text-2xl md:text-3xl font-bold mb-4`}>3 sessions per Week</h2>
             <p className="text-lg md:text-xl mb-4">$250 per month</p>
             <p className="text-lg md:text-xl mb-8">Comprehensive training for those dedicated to achieving peak fitness levels.</p>
           </div>
