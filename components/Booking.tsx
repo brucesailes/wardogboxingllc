@@ -38,7 +38,7 @@ const BookingOptions = () => {
         {/* 4 Sessions per Month */}
         <div className="bg-white text-blue-500 p-6 shadow-xl rounded-xl text-center transition-all duration-300 transform hover:scale-105 flex flex-col justify-between">
           <div className="flex-grow">
-            <h2 className={`${styles.bookingHeader} text-2xl md:text-3xl font-bold mb-4`}>4 Sessions per Month</h2>
+            <h2 className={`${styles.bookingHeader} text-2xl md:text-3xl font-bold mb-4`}>1 session a week</h2>
             <p className="text-lg md:text-xl mb-4">$100 per month</p>
             <p className="text-lg md:text-xl mb-8">Learn essential self-defense techniques to enhance personal safety and confidence. Build strength and endurance. Learn the fundamentals of boxing.</p>
           </div>
