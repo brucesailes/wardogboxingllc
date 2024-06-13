@@ -8,7 +8,7 @@ export default function HeroSection() {
     <main className="relative flex items-center justify-center min-h-screen w-full text-white">
       <div className="absolute inset-0">
         <Image 
-          src="/images/compressed/slide2.png" 
+          src="/slide2.png" 
           alt="Background Image" 
           fill={true} 
           style={{ objectFit: "cover" }} 

@@ -6,7 +6,7 @@ export default function ServicesSection() {
     <section className="relative flex flex-col items-center justify-center min-h-screen w-full text-white">
       <div className="absolute inset-0">
         <Image 
-          src="/images/compressed/slide4.png" 
+          src="/slide4.png" 
           alt="Background Image" 
           fill={true} 
           style={{ objectFit: "cover", objectPosition: "top center" }} 

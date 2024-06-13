@@ -8,14 +8,14 @@ const FreeTrial: React.FC = () => {
     <section className="relative text-blue-500 py-16 min-h-screen flex flex-col items-center justify-center bg-cover bg-center">
       <div className="absolute inset-0">
         <Image 
-          src="/images/compressed/slide7.png" 
+          src="/slide7.png" 
           alt="Background Image" 
           fill={true} 
           style={{objectFit:"cover"}} 
           quality={50} 
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           placeholder="blur"
-          blurDataURL="/images/compressed/slide7.png"
+          blurDataURL="/slide7.png"
           loading="lazy"
         />
         <div className="absolute inset-0 bg-black opacity-50"></div>

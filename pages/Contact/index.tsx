@@ -8,14 +8,14 @@ export default function Contact() {
             <section className="relative w-full text-white py-40">
                 <div className="absolute inset-0">
                     <Image 
-                        src="/images/compressed/contact-image-1.png" 
+                        src="/contact-image-1.png" 
                         alt="Background Image" 
                         fill={true} 
                         style={{ objectFit: "cover" }} 
                         quality={50}
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         placeholder="blur"
-                        blurDataURL="/images/compressed/contact-image-1.png"
+                        blurDataURL="/contact-image-1.png"
                         loading="lazy"
                     />
                     <div className="absolute inset-0 bg-black opacity-50"></div>

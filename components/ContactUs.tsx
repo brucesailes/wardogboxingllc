@@ -7,14 +7,14 @@ const ContactUs: React.FC = () => {
     <section className="relative text-white py-16">
       <div className="absolute inset-0">
         <Image 
-          src="/images/compressed/slide6.png" 
+          src="/slide6.png" 
           alt="Background Image" 
           fill={true} 
           style={{ objectFit: "cover" }} 
           quality={50} 
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           placeholder="blur"
-          blurDataURL="/images/compressed/slide6.png"
+          blurDataURL="/slide6.png"
           loading="lazy"
         />
         <div className="absolute inset-0 bg-black opacity-50"></div>
