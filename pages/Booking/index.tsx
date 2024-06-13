@@ -1,13 +1,27 @@
 import React from "react";
 import Link from "next/link";
+import Image from 'next/image';
 
 
-const BookingOptions = () => {
+const BookingOptions: React.FC = () => {
   return (
     <main className="min-h-screen pt-16 md:pt-15 py-8">
       {/* Our Programs Section */}
-      <section className="relative w-full bg-cover bg-top text-white py-40" style={{ backgroundImage: "url('/slide5.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
-        <div className="absolute inset-0 bg-black opacity-50"></div>
+      <section className="relative w-full text-white py-40">
+        <div className="absolute inset-0">
+          <Image 
+            src="/images/compressed/slide5.png" 
+            alt="Background Image" 
+            fill={true} 
+            style={{ objectFit: "cover" }} 
+            quality={50} 
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            placeholder="blur"
+            blurDataURL="/images/compressed/slide5.png"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-black opacity-50"></div>
+        </div>
         <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
           <h1 className="text-white text-5xl md:text-6xl font-bold mb-4 transition-all duration-300 transform hover:scale-105">
             OUR PROGRAMS

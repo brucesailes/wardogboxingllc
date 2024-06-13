@@ -1,14 +1,25 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 
 const FreeTrial: React.FC = () => {
   return (
-    <section 
-      className="relative text-blue-500 py-16 min-h-screen flex flex-col items-center justify-center bg-cover bg-center" 
-      style={{ backgroundImage: "url('/slide7.png')" }}
-    >
-      <div className="absolute inset-0 bg-black opacity-50"></div>
+    <section className="relative text-blue-500 py-16 min-h-screen flex flex-col items-center justify-center bg-cover bg-center">
+      <div className="absolute inset-0">
+        <Image 
+          src="/images/compressed/slide7.png" 
+          alt="Background Image" 
+          fill={true} 
+          style={{objectFit:"cover"}} 
+          quality={50} 
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          placeholder="blur"
+          blurDataURL="/images/compressed/slide7.png"
+          loading="lazy"
+        />
+        <div className="absolute inset-0 bg-black opacity-50"></div>
+      </div>
       <div className="relative z-10 text-center max-w-3xl mx-auto px-4">
         <h1 className="text-4xl md:text-5xl font-bold mb-8 text-white">JOIN US FOR A FREE SESSION</h1>
         <div className="bg-white p-8 shadow-xl rounded-xl text-center transition-all duration-300 transform hover:scale-105 flex flex-col justify-between max-w-lg mx-auto">
@@ -28,4 +39,5 @@ const FreeTrial: React.FC = () => {
 };
 
 export default FreeTrial;
+
 
