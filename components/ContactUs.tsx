@@ -13,7 +13,7 @@ const ContactUs: React.FC = () => {
           quality={75} 
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           placeholder="blur"
-          blurDataURL="/slide6-blur.png" // Use a low-quality placeholder for faster initial load
+          blurDataURL="/slide6.png" // Use a low-quality placeholder for faster initial load
           loading="lazy"
         />
         <div className="absolute inset-0 bg-black opacity-50"></div>
