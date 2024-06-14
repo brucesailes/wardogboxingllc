@@ -9,7 +9,7 @@ const ContactUs: React.FC = () => {
           src="/slide6.webp" 
           alt="Background Image" 
           fill={true} 
-          style={{ objectFit: "cover", objectPosition: "center" }} 
+          className="object-cover object-top"
           quality={75} 
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           placeholder="blur"
@@ -18,9 +18,9 @@ const ContactUs: React.FC = () => {
         />
         <div className="absolute inset-0 bg-black opacity-50"></div>
       </div>
-      <div className="relative container mx-auto flex flex-col items-center justify-center px-4">
-        <div className="text-center md:text-left">
-        <h2 className="text-white text-4xl md:text-6xl font-extrabold mb-8 transition-all duration-300 transform hover:scale-105">
+      <div className="relative z-10 text-center w-full px-4 py-16">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-white text-4xl md:text-6xl font-extrabold mb-8 transition-all duration-300 transform hover:scale-105">
             CONTACT US
           </h2>
           <p className="mb-2 font-bold transition-all duration-300 transform hover:scale-105">
@@ -42,6 +42,7 @@ const ContactUs: React.FC = () => {
 };
 
 export default ContactUs;
+
 
 
 
