@@ -3,17 +3,17 @@ import Image from 'next/image';
 
 const ContactUs: React.FC = () => {
   return (
-    <section className="relative text-white py-16">
+    <section className="relative flex items-center justify-center h-96 sm:h-96 md:h-screen w-full text-white">
       <div className="absolute inset-0">
         <Image 
-          src="/slide6.png" 
+          src="/slide6.webp" 
           alt="Background Image" 
           fill={true} 
           style={{ objectFit: "cover", objectPosition: "center" }} 
           quality={75} 
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           placeholder="blur"
-          blurDataURL="/slide6.png" // Use a low-quality placeholder for faster initial load
+          blurDataURL="/slide6.webp" 
           loading="lazy"
         />
         <div className="absolute inset-0 bg-black opacity-50"></div>

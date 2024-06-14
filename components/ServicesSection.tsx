@@ -3,14 +3,14 @@ import Image from 'next/image';
 
 export default function ServicesSection() {
   return (
-    <section className="relative flex flex-col items-center justify-center min-h-screen w-full text-white">
+    <section className="relative flex items-center justify-center h-96 sm:h-96 md:h-screen w-full text-white">
       <div className="absolute inset-0">
         <Image 
-          src="/slide4.png" 
+          src="/slide4.webp" 
           alt="Background Image" 
           fill={true} 
-          style={{ objectFit: "cover", objectPosition: "top center" }} 
-          quality={50} 
+          className="object-cover object-top"
+          quality={75} 
           loading="lazy"
         />
         <div className="absolute inset-0 bg-black opacity-50"></div>
@@ -25,7 +25,10 @@ export default function ServicesSection() {
           </p>
           <div className="flex justify-center mt-6">
             <Link href="/Booking" legacyBehavior>
-              <a className="bg-blue-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-600 transition-all duration-300 transform hover:scale-105">
+              <a 
+                className="bg-blue-700 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-800 transition-all duration-300 transform hover:scale-105"
+                aria-label="Book Now"
+              >
                 Book Now
               </a>
             </Link>

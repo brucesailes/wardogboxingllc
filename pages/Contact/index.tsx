@@ -10,7 +10,7 @@ export default function Contact() {
                         {/* Logo Column */}
                         <div className="flex justify-center md:justify-end mb-8 md:mb-0">
                             <Image 
-                                src="/wardogboxing.png" 
+                                src="/wardogboxing.webp" 
                                 alt="Wardog Boxing Logo" 
                                 width={200} 
                                 height={200} 

@@ -12,12 +12,13 @@ export default function Navigations() {
       <div className="ml-4 flex items-center">
         <Link href="/" legacyBehavior>
           <a>
-            <Image src="/wardogboxing.png" alt="Wardog Boxing Logo" width={50} height={50} />
+            <Image src="/wardogboxing.webp" alt="Wardog Boxing Logo" width={50} height={50} />
           </a>
         </Link>
       </div>
       <div className="lg:hidden flex items-center">
         <button
+          type='button'
           className="text-white focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
         >
