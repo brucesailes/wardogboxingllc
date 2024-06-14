@@ -20,6 +20,7 @@ export default function Navigations() {
         <button
           type='button'
           className="text-white focus:outline-none"
+          aria-label={isOpen ? "Close menu" : "Open menu"}
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? (
