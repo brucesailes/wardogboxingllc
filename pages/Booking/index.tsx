@@ -30,7 +30,7 @@ const BookingOptions: React.FC = () => {
 
       {/* Price List Section */}
       <section className="container mt-10 mx-auto px-4 py-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6">
           {/* Single Session */}
           <div className="bg-white text-blue-500 p-6 shadow-xl rounded-xl text-center transition-all duration-300 transform hover:scale-105 flex flex-col justify-between">
             <div className="flex-grow">
@@ -49,26 +49,6 @@ const BookingOptions: React.FC = () => {
               </a>
             </Link>
           </div>
-
-          {/* 4 Sessions per Month */}
-          <div className="bg-white text-blue-500 p-6 shadow-xl rounded-xl text-center transition-all duration-300 transform hover:scale-105 flex flex-col justify-between">
-            <div className="flex-grow">
-              <h2 className="text-black text-2xl md:text-3xl font-bold mb-4">1 session per Week</h2>
-              <p className="text-black text-lg md:text-xl mb-4">$100 per month</p>
-              <p className="text-black text-lg md:text-xl mb-8">Learn essential self-defense techniques to enhance personal safety and confidence. Build strength and endurance. Learn the fundamentals of boxing.</p>
-            </div>
-            <Link href="https://calendly.com/wardogboxingllc/4-sessions-per-month" legacyBehavior>
-              <a 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="bg-blue-700 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-800 transition-all duration-300 transform hover:scale-105"
-                aria-label="Book 4 Sessions per Month"
-              >
-                BOOK
-              </a>
-            </Link>
-          </div>
-
           {/* Twice a Week Sessions */}
           <div className="bg-white text-blue-500 p-6 shadow-xl rounded-xl text-center transition-all duration-300 transform hover:scale-105 flex flex-col justify-between">
             <div className="flex-grow">
