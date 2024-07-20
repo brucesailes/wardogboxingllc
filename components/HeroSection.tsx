@@ -35,10 +35,10 @@ export default function HeroSection() {
           <div className="flex justify-center mt-8">
             <Link href="/Booking" legacyBehavior>
               <a 
-                className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-full transition-transform duration-300 transform hover:scale-110 shadow-lg hover:shadow-xl"
+                className="button bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-full transition-transform duration-300 transform hover:scale-110 shadow-lg hover:shadow-xl"
                 aria-label="Get Started with Booking"
               >
-                Get Started
+                <span className="inline-block relative transition-all duration-500">Get Started</span>
               </a>
             </Link>
           </div>
@@ -47,6 +47,7 @@ export default function HeroSection() {
     </>
   );
 }
+
 
 
 
