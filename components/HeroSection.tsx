@@ -29,7 +29,7 @@ export default function HeroSection() {
             WAR DOG BOXING
           </h1>
           <blockquote className="quote-font text-sm sm:text-lg md:text-2xl lg:text-3xl italic mb-6 transition-transform duration-300 transform hover:scale-105">
-            "SAVING HUMANITY ONE JAB AT A TIME."
+          &quot;SAVING HUMANITY ONE JAB AT A TIME.&quot;
             <footer className="mt-2 text-xs sm:text-sm md:text-base lg:text-lg">- KEVIN COOPER</footer>
           </blockquote>
           <div className="flex justify-center mt-8">
