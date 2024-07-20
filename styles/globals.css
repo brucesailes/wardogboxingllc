@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -16,4 +19,26 @@ body {
   font-optical-sizing: auto;
   font-style: bold;
  
+}
+
+.header-font {
+  font-family: "Anton SC", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  color: whitesmoke;
+}
+
+.nav-bar {
+  font-family: "Anton SC", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  
+}
+
+
+.quote-font {
+  font-family: "Bodoni Moda SC", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
 }

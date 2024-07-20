@@ -1,21 +1,23 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { MenuIcon, XIcon } from '@heroicons/react/outline'; // Importing Heroicons
-import styles from '../styles/Navigations.module.css';
+import { MenuIcon, XIcon } from '@heroicons/react/outline'; 
+import '../styles/globals.css';
+
 
 export default function Navigations() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className={`${styles.nav} fixed bg-black top-0 left-0 w-full shadow-md z-50 p-4 ${isOpen ? 'h-auto' : 'h-16'} flex justify-between items-center`}>
-      <div className="ml-4 flex items-center">
-        <Link href="/" legacyBehavior>
-          <a>
-            <Image src="/wardogboxing.webp" alt="Wardog Boxing Logo" width={50} height={50} />
-          </a>
-        </Link>
-      </div>
+    <nav className={`nav-bar fixed bg-black top-0 left-0 w-full shadow-md z-50 p-4 ${isOpen ? 'h-auto' : 'h-16'} flex justify-between items-center`}>
+     <div className="ml-4 flex items-center">
+  <Link href="/" legacyBehavior>
+    <a className="flex items-center">
+      <Image src="/wardogboxing.webp" alt="Wardog Boxing Logo" width={50} height={50} />
+      <span className="ml-2 text-l sm:text-xs md:text-base lg:text-xl font-bold text-white">WAR DOG BOXING</span>
+    </a>
+  </Link>
+</div>
       <div className="lg:hidden flex items-center">
         <button
           type='button'

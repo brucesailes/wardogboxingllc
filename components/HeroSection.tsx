@@ -1,4 +1,3 @@
-import { companyInfo } from "../src/data/companyInfo";
 import Link from 'next/link';
 import Image from 'next/image';
 import Head from 'next/head';
@@ -10,32 +9,33 @@ export default function HeroSection() {
         {/* Preload the hero image */}
         <link rel="preload" href="/slide2.webp" as="image" />
       </Head>
-      <main className="relative flex items-center justify-center h-96 sm:h-96 md:h-screen w-full text-white">
+      <main className="relative mt-10 md:mt-10 flex items-center justify-center h-screen w-full text-white">
         <div className="absolute inset-0">
           <Image 
             src="/slide2.webp" 
             alt="Background Image" 
             fill={true} 
             className="object-cover"
-            quality={70} 
+            quality={100} 
             priority={true}
+            unoptimized
             loading="eager" // Eager loading for the main hero image
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
           <div className="absolute inset-0 bg-black opacity-50"></div>
         </div>
-        <div className="relative z-10 text-center w-full max-w-none px-4 py-16">
-          <h1 className="text-white text-4xl mt-5 md:text-7xl font-extrabold transition-transform duration-300 transform hover:scale-105">
+        <div className="relative z-10 text-center w-full max-w-3xl px-6 py-24">
+          <h1 className="header-font text-white text-4xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-7xl mb-4 transition-transform duration-300 transform hover:scale-105">
             WAR DOG BOXING
           </h1>
-          <blockquote className="text-xl md:text-2xl mt-4 italic transition-transform duration-300 transform hover:scale-105">
-            &rdquo;{companyInfo.companySlogan}&rdquo;
-            <footer className="mt-2">- KEVIN COOPER</footer>
+          <blockquote className="quote-font text-sm sm:text-lg md:text-2xl lg:text-3xl italic mb-6 transition-transform duration-300 transform hover:scale-105">
+            "SAVING HUMANITY ONE JAB AT A TIME."
+            <footer className="mt-2 text-xs sm:text-sm md:text-base lg:text-lg">- KEVIN COOPER</footer>
           </blockquote>
-          <div className="flex justify-center mt-6">
+          <div className="flex justify-center mt-8">
             <Link href="/Booking" legacyBehavior>
               <a 
-                className="bg-blue-700 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-800 transition-transform duration-300 transform hover:scale-105"
+                className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-full transition-transform duration-300 transform hover:scale-110 shadow-lg hover:shadow-xl"
                 aria-label="Get Started with Booking"
               >
                 Get Started
