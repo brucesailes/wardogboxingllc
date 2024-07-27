@@ -1,8 +1,10 @@
+'use client'
+
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { MenuIcon, XIcon } from '@heroicons/react/outline'; 
-import '../styles/globals.css';
+
 
 
 export default function Navigations() {
